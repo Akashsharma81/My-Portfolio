@@ -1,0 +1,498 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+} 
+
+html,body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  scroll-margin-top: 120px; /* isse yah hoga ki koi be section top se 120 px niche rahega */
+}
+.icon{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.profile{
+  display: flex;
+ }
+ .profile-img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover; 
+  display: block;
+  margin-right: 10px;
+ /* padding: 0; */
+ }
+header {
+  background: rgb(18, 18, 62);
+  color: white;
+  padding:10px 20px 0 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+#nav-links{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  top: 70px;
+  right: 0;
+  /* transition: opacity 1s ease, transform 1s ease;  */
+}
+#nav-links ul li a:hover{
+  font-size: 1.8rem;
+}
+
+
+.right ul {
+  list-style: none;
+  display: flex;
+}
+.right ul li {
+  margin: 0 15px;
+}
+.right ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.right ul li a:hover{
+  color: #acecfc;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (max-width: 830px) {
+ 
+  nav {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+  .right ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: rgb(18, 18, 62);
+      width: 200px;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 5px;
+  }
+  .right ul.active {
+      display: flex;
+  }
+  .hamburger {
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 10px;
+     
+
+  }
+  .hamburger:hover{
+    font-size: 1.6rem;
+    color: #dd0ddd;
+  }
+}
+
+.left {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+.firstSection {
+  display: flex;
+  justify-content: center; /* Space-between ki jagah center use karein */
+  align-items: center;
+  margin: 50px auto;
+  max-width: 1200px; /* Ensure karega ki center me rahe */
+  width: 90%;
+ 
+
+}
+
+.leftSection {
+  font-size: 2.5rem;
+  width: 50%;
+  padding: 10px;
+
+}
+.buttons {
+display: flex;
+gap: 18px;
+}
+.btn {
+padding: 12px 24px;
+font-size: 16px;
+font-weight: bold;
+color: white;
+background: linear-gradient(45deg, rgb(18, 18, 62), #0056b3); /* Gradient Blue */
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: all 0.3s ease;
+box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+
+#element{
+  font-size: 24px;
+ /* width: 100%; */
+}
+}
+
+
+
+.btn:hover {
+background: linear-gradient(45deg, #0004ff, #a70b5e); /* Neon Pink on Hover */
+transform: scale(1.05);
+box-shadow: 0 4px 15px rgba(255, 20, 147, 0.5);
+}
+.rightSection{
+  width: 40%;
+  min-width: 350px;
+   margin: 0 auto;
+   text-align: right;
+   margin-right: 0;
+   /* justify-content: center; */
+
+}
+.rightSection img {
+  width: 65%;
+  height: 80%;
+}
+.purple{
+  color: rgb(245, 55, 235);
+  font-weight:bold;
+}
+#element{
+  color: rgb(245, 55, 235);
+}
+
+@media (max-width: 885px) {
+  .firstSection {
+    flex-direction: column;
+    gap: 20px;
+   
+  }
+  .leftSection {
+    font-size: 2rem;
+    width: 40%;
+    padding: 10px;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  
+  }
+  .rightSection{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .buttons{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+
+  }
+}
+
+ hr{
+  border: 0;
+  background: rgb(45, 8, 112);
+  height: 1.2px;
+  margin: 35px 90px;
+}
+
+
+/* About Me Section  */
+#about {
+  padding: 80px 0;
+  background-color: #0b132b; /* Darker Background */
+  color: #fff;
+  text-align: center;
+}
+.about-box{
+  background: #112240;
+  padding: 20px;
+  /* margin: 20px; */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.about-box:hover {
+  transform: scale(1.05);
+}
+.container {
+  width: 60%; /* Reduce width for better alignment */
+  margin: auto;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-content h2 span {
+  color: #00aaff;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8; /*Increase line height*/
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.about-content h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #00aaff;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+  text-align: left; /* Align list items left */
+  display: inline-block;
+}
+
+.about-content ul li {
+  font-size: 1.1rem;
+  margin: 15px 0; /* Add more gap between list items */
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .about-content h2 {
+      font-size: 2rem;
+  }
+
+  .about-content p,
+  .about-content ul li {
+      font-size: 1rem;
+  }
+}
+
+
+/* project section */
+
+.project{
+  height: 100px;
+  width: 170px;
+  
+}
+
+/* Skills Section */
+.skills-section{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0a192f;
+    color: white;
+  }
+  .skills-section h2{
+    padding-bottom: 20px;
+   
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .skill {
+    background: #112240;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+   
+  }
+.project-card{
+  cursor: pointer;
+}
+  .skill:hover {
+    transform: scale(1.05);
+  }
+  
+   img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .skill h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #64ffda;
+  }
+  
+  .skill p {
+    font-size: 0.9rem;
+    color: #ccd6f6;
+  }
+ .skills-section a{
+  text-decoration: none;
+ } 
+  
+  /* Responsive Design */
+  @media (max-width: 885px) {
+    .skills-container {
+      flex-direction: column;
+    }
+    .skill {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
+
+
+
+/* contact sections */
+.contact-container {
+  background: #0d1c35;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  max-width: 600px; /* Max limit di */
+  width: 80%; /* Default width flexible rakhi */
+  text-align: center;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+/* Mobile ke liye width adjust */
+@media (max-width: 768px) {
+  .contact-container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .contact-section {
+      width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+      width: 95%;
+      padding: 10px;
+  }
+}
+
+
+  h2 {
+      color: #64ffda;
+  }
+
+  .input-box {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      border-bottom: 2px solid black;
+      background: #d3d8df;
+      
+  }
+
+ .message-btn{
+    width: 90%;
+ }
+
+  .contact-info {
+      margin-top: 25px;
+      font-size: 14px;
+  }
+
+  .contact-info a {
+      color: #64ffda;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+footer ul li{
+  list-style: none;
+  
+}
+footer ul li a {
+    font-size: 14px;
+    color: #62eee2; /* Default text color */
+    text-decoration: underline;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  footer ul li a:hover {
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .footer p{
+    text-align: center;
+    margin:  30px auto;
+    color: #e0e4ec;
+    display: flex;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgb(61, 88, 240);
+  }
+
+
+
+  
+
